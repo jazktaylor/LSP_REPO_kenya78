@@ -1,0 +1,33 @@
+AI Prompts and Responses: 
+
+AI helped provide the structure fot the AreaCalculator and Main class. 
+I verifired the correctness of the formulas, Java syntax, and made sure the code adhered to the specfied requirements. 
+
+#Prompt 1: 
+"Write a Java class AreaCalculator with overloaded methods for circle, rectangle, triangle, and square areas. Include exception handling for invalid dimensions."
+
+#Response 1: 
+public class AreaCalculator {
+    public static double area(double radius) { ... }
+    public static double area(double width, double height) { ... }
+    public static double area(int base, int height) { ... }
+    public static double area(int side) { ... }
+}
+"Each method throws IllegalArgumentException if a dimension ≤ 0."
+
+#Prompt 2: 
+"Add a Main class that prints the required output exactly and demonstrates exception handling."
+
+#Response 2: 
+System.out.println("Circle radius 3.0 → area = " + AreaCalculator.area(3.0));
+try {
+    AreaCalculator.area(-1);
+} catch (IllegalArgumentException e) {
+    System.out.println("Error: " + e.getMessage());
+}
+
+#Prompt 3: 
+"Explain why method overloading is useful here."
+
+#Response 3: 
+"Method overloading keeps related methods grouped under a single name area, improving readability and usability. Using separate method names like circleArea or squareArea would be less elegant and harder to maintain."
