@@ -1,0 +1,24 @@
+AI Prompts and Responses: 
+
+This solution was developed with support from an AI language model (ChatGPT – GPT-5 by OpenAI). 
+The AI was used to assist with understanding object-oriented programming concepts including abstract classes, interfaces, inheritance, and polymorphism in Java. 
+It also provided guidance in writing the DoorLock, Thermostat, and Camera classes to extend a provided abstract class and implement the required interfaces. 
+I reviewed and edited the structure, interface implementation, and rationale were to ensure accuracy, understanding, and adherence to assignment requirements.
+
+#Prompt 1: 
+"I need help understanding this Java assignment about abstract classes and interfaces. What does it mean that the Device class is abstract and why do subclasses have to extend it?"
+
+#Response Summary 1: 
+"The Device class defines shared attributes and behavior for all smart campus devices, and subclasses like DoorLock, Thermostat, and Camera must extend it to inherit that shared functionality."
+
+#Prompt 2: "How do I make DoorLock implement both Networked and BatteryPowered?"
+
+#Response Summary 2: 
+The AI showed that DoorLock must implement all methods from both interfaces and extend Device.
+It also provided the syntax to do so. 
+
+
+#Prompt 3: "Write a short explanation of why this design uses an abstract class and interfaces. Is this multiple inheritance?"
+
+#Response Summary 4: 
+The AI helped write a 3-sentence rationale explaining that Device is abstract to enforce shared structure among devices, interfaces allow flexible behavior like networking and battery power, and Java avoids true multiple inheritance but supports multiple interface inheritance.
